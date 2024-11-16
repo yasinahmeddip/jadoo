@@ -1,0 +1,186 @@
+/* font-family: "Work Sans", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: "Open Sans", sans-serif; */
+
+/* Nav style */
+
+
+/* share colour start */
+.color-primary {
+    color: #FD6E0A;
+}
+
+.secondary-bg {
+    background-color: #fff8f3;
+}
+
+.dark-2 {
+    color: #474747;
+}
+
+.dark-3 {
+    color: #757575;
+}
+
+.btn {
+    background-color: #FD6E0A;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 16px 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* share colour end */
+.headder-img {
+    background-image:url(../assets/Decore.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.image-banner-image img{
+    height: 700px;
+    width: auto;
+}
+.nab-bar {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 230px;
+}
+
+.nav-title {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.banner {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 35px 0 230px;
+}
+
+.banner-content {
+    width: 585px;
+    margin-top: 100px;
+}
+.banner-content p {
+    margin: 35px 0px;
+}
+
+.banner-greeting {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DF6951;
+}
+
+.banner-title {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.banner-image {
+    width: 500px;
+}
+
+
+
+
+.image-banner-image {
+    margin-bottom: -5px;
+}
+/* main Style  */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.cards {
+    font-family: "Open Sans", sans-serif;
+}
+
+.card {
+    width: 267px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card img {
+    padding: 30px 193px 30px 30px;
+}
+
+.card h3 {
+    padding: 30px 30px 0px 30px;
+}
+
+.card p {
+    padding: 20px 33px 30px 33px;
+    line-height: 28px;
+}
+
+.card-post {
+    display: flex;
+    margin: 0px auto 130px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contract {
+    background-color: #fff8f3;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px auto;
+}
+
+/* form start  */
+.from-title{
+    padding-top:130px ;
+}
+label {
+    display: block;
+    margin-bottom: 10px
+}
+.form-input {
+    padding-top: 40px;
+    padding-left: 20px;
+
+}
+
+.form-input input{
+    padding: 18px 30px;
+    border: none;
+    font-size: 16px;
+}
+.form-input textarea{
+    padding: 18px 30px;
+    border: none;
+    font-size: 18px;
+    height: 20px;
+}
+.pd-130{
+    margin: 24px 0px 130px;
+}
+.from-padding{
+    padding:0px 220px 0px 100px;
+}
+/* form end  */

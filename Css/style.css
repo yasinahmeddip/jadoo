@@ -4,7 +4,20 @@
     padding: 0;
 }
 
-/* font-family: "Open Sans", sans-serif; */
+body {
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: "Volkhov", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+/* font-family: "Poppins", sans-serif; */
 
 /* Nav style */
 
@@ -27,25 +40,51 @@
 }
 
 .btn {
-    background-color: #FD6E0A;
+    background-color: #f1a501;
     color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-white {
+
+    color: black;
     font-weight: bold;
     font-size: 20px;
     padding: 16px 30px;
     border-radius: 10px;
     border: none;
+    margin-left: 30px;
+    background-color: white;
+}
+
+.btn-white i {
+    background-color: #df6951;
+    padding: 20px 14px 10px 18px;
+    color: white;
+    border-radius: 50px;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
 }
 
 /* share colour end */
 .headder-img {
-    background-image:url(../assets/Decore.png);
+    background-image: url(../assets/Decore.png);
     background-repeat: no-repeat;
     background-position: top right;
+    margin-bottom: 97px;
 }
-.image-banner-image img{
+
+.image-banner-image img {
     height: 700px;
     width: auto;
 }
+
 .nab-bar {
     display: flex;
     font-family: "Open Sans", sans-serif;
@@ -79,12 +118,14 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     margin: 0px 35px 0 230px;
+
 }
 
 .banner-content {
     width: 585px;
     margin-top: 100px;
 }
+
 .banner-content p {
     margin: 35px 0px;
 }
@@ -105,32 +146,54 @@ nav ul li a {
     width: 500px;
 }
 
-
-
-
 .image-banner-image {
     margin-bottom: -5px;
 }
+
 /* main Style  */
 main {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
+
+.cate {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 10PX;
+    color: #5E6282;
+}
+
+.gory {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    text-transform: capitalize;
+    margin-bottom: 68px;
+}
+
 .cards {
     font-family: "Open Sans", sans-serif;
+    margin-bottom: 123px;
 }
 
 .card {
     width: 267px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 36px;
+    padding: 0px 0px;
 }
 
 .card img {
-    padding: 30px 193px 30px 30px;
+    padding: 42px 0px 0px 0px;
+    width: auto;
+    height: 60px;
+    text-align: center;
 }
 
 .card h3 {
-    padding: 30px 30px 0px 30px;
+    padding: 30px 0px 15px 0px;
 }
 
 .card p {
@@ -145,42 +208,58 @@ main {
     justify-content: space-around;
 }
 
+.destination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Selling {
+    width: 300px;
+
+}
+
 .contract {
-    background-color: #fff8f3;
     display: flex;
     font-family: "Open Sans", sans-serif;
     padding: 0px auto;
 }
 
 /* form start  */
-.from-title{
-    padding-top:130px ;
+.from-title {
+    padding-top: 130px;
 }
+
 label {
     display: block;
     margin-bottom: 10px
 }
+
 .form-input {
     padding-top: 40px;
     padding-left: 20px;
 
 }
 
-.form-input input{
+.form-input input {
     padding: 18px 30px;
     border: none;
     font-size: 16px;
 }
-.form-input textarea{
+
+.form-input textarea {
     padding: 18px 30px;
     border: none;
     font-size: 18px;
     height: 20px;
 }
-.pd-130{
+
+.pd-130 {
     margin: 24px 0px 130px;
 }
-.from-padding{
-    padding:0px 220px 0px 100px;
+
+.from-padding {
+    padding: 0px 220px 0px 100px;
 }
+
 /* form end  */

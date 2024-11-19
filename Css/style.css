@@ -225,41 +225,201 @@ main {
     padding: 0px auto;
 }
 
-/* form start  */
-.from-title {
-    padding-top: 130px;
+.booking {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-label {
-    display: block;
-    margin-bottom: 10px
+.trip-booking {
+    margin-right: 50px;
+    padding-left: 100px;
 }
 
-.form-input {
-    padding-top: 40px;
-    padding-left: 20px;
-
-}
-
-.form-input input {
-    padding: 18px 30px;
-    border: none;
-    font-size: 16px;
-}
-
-.form-input textarea {
-    padding: 18px 30px;
-    border: none;
+.easy {
     font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #5E6282;
+}
+
+.trip-booking h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    text-transform: capitalize;
+    color: #14183E;
+    margin-bottom: 31px;
+    width: 511px;
+}
+
+.trip-headding-all {
+    display: flex;
+    color: #5E6282;
+    margin-bottom: 48px;
+    width: 395px;
+}
+
+.trip-headding-image {
+    margin-right: 12px;
+}
+
+.trip-headding {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 124.5%;
+}
+
+.trip-descript {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 124.5%;
+}
+
+.trip-image {
+    width: 485px;
+    margin-top: 30px;
+}
+
+.testimonials {
+    display: flex;
+    margin: 0 auto;
+}
+
+.testimoni-text {
+    text-align: left;
+}
+
+.testimoni-text p {
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.testimoni-text h1 {
+    font-family: Volkhov;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    text-transform: capitalize;
+}
+
+.testimonials-image {
+    width: 669px;
+    text-align: right;
+}
+
+.slide-logo {
+    width: 1280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 111px;
+}
+
+.last-section {
+    padding: 90px 140px 0px;
+}
+
+.contract {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo-text {
+    width: 207px;
+
+}
+
+.logo-text p {
+    color: rgb(94, 98, 130);
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 124.5%;
+    margin-top: 20px;
+}
+
+.logo-list-item {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo-list-item ul {}
+
+.company-list {
+    color: #080809;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 124.5%;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.logo-list-item ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.logo-list-item ul li a {
+    text-decoration: none;
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 124.5%;
+    text-align: left;
+}
+
+.copy-right {
+    text-align: center;
+    margin-top: 60px;
+    color: rgb(94, 98, 130);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 124.5%;
+}
+
+.icon-all {
+    margin-bottom: 10PX;
+}
+
+.icon-all ul {
+    display: flex;
+
+}
+
+.icon-all ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.icon-all ul li a {
+    text-decoration: none;
+
+}
+
+.icon-all ul li a i {
+    padding: 15px 15px 15px 15px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
     height: 20px;
-}
+    width: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50PX;
 
-.pd-130 {
-    margin: 24px 0px 130px;
-}
 
-.from-padding {
-    padding: 0px 220px 0px 100px;
 }
-
-/* form end  */

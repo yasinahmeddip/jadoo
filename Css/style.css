@@ -3,9 +3,27 @@
     margin: 0;
     padding: 0;
 }
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0 auto;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -90,7 +108,14 @@ p {
     font-family: "Open Sans", sans-serif;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 230px;
+    padding: 20px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .nav-title {
@@ -101,11 +126,12 @@ p {
 nav ul {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 nav ul li {
     list-style: none;
-    margin-left: 50px;
+    margin-left: 0;
 }
 
 nav ul li a {
@@ -117,8 +143,9 @@ nav ul li a {
     font-family: "Open Sans", sans-serif;
     display: flex;
     justify-content: space-between;
-    margin: 0px 35px 0 230px;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .banner-content {
@@ -148,6 +175,120 @@ nav ul li a {
 
 .image-banner-image {
     margin-bottom: -5px;
+}
+
+/* Offset for sticky nav when scrolling to anchors */
+main section {
+    scroll-margin-top: 100px;
+}
+
+/* Responsive Styles */
+/* Tablet: keep inline menu (no dropdown), tighten spacing */
+@media (max-width: 1024px) {
+    .nab-bar {
+        padding: 16px 40px;
+    }
+    .banner {
+        margin: 0 24px;
+        gap: 24px;
+    }
+    .banner-title {
+        font-size: 56px;
+        line-height: 1.1;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .image-banner-image img {
+        height: 520px;
+    }
+    .trip-booking {
+        padding-left: 40px;
+        margin-right: 24px;
+    }
+    .slide-logo {
+        width: 100%;
+        padding: 0 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nab-bar {
+        padding: 12px 16px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 16px;
+        text-align: center;
+    }
+    .banner-content {
+        width: 100%;
+        margin-top: 24px;
+    }
+    .banner-title {
+        font-size: 36px;
+    }
+    .btn, .btn-white {
+        font-size: 16px;
+        padding: 12px 18px;
+        margin-top: 8px;
+    }
+    .image-banner-image img {
+        height: auto;
+        width: 100%;
+    }
+    main {
+        padding: 0 16px;
+    }
+    .gory {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 32px;
+    }
+    .card-post {
+        gap: 16px;
+    }
+    .booking {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 24px;
+    }
+    .trip-booking {
+        padding-left: 0;
+        margin-right: 0;
+    }
+    .trip-image {
+        width: 100%;
+    }
+    .testimonials {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .testimonials-image {
+        width: 100%;
+        text-align: center;
+    }
+    .slide-logo {
+        width: 100%;
+        padding: 0 8px;
+    }
+    .last-section {
+        padding: 48px 16px 0;
+    }
+    .logo-list-item {
+        width: 100%;
+        gap: 16px;
+        justify-content: space-between;
+    }
 }
 
 /* main Style  */
@@ -316,12 +457,13 @@ main {
 }
 
 .slide-logo {
-    width: 1280px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 111px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 111px;
 }
 
 .last-section {

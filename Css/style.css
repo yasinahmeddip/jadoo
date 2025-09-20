@@ -61,7 +61,7 @@ p {
     background-color: #f1a501;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
     padding: 20px 30px;
     border-radius: 10px;
     border: none;
@@ -71,7 +71,7 @@ p {
 
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
     padding: 16px 30px;
     border-radius: 10px;
     border: none;
@@ -119,7 +119,7 @@ p {
 }
 
 .nav-title {
-    font-size: 45px;
+    font-size: clamp(28px, 4vw, 45px);
     font-weight: bolder;
 }
 
@@ -136,7 +136,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: clamp(13px, 2vw, 20px);
 }
 
 .banner {
@@ -158,13 +158,13 @@ nav ul li a {
 }
 
 .banner-greeting {
-    font-size: 20px;
+    font-size: clamp(16px, 2.2vw, 20px);
     font-weight: bold;
     color: #DF6951;
 }
 
 .banner-title {
-    font-size: 80px;
+    font-size: clamp(32px, 6vw, 80px);
     font-weight: bold;
     margin-top: 20px;
 }
@@ -181,10 +181,28 @@ nav ul li a {
 main section {
     scroll-margin-top: 100px;
 }
+/* Ensure footer anchors aren’t hidden under sticky nav */
+footer#footer, footer.last-section, #footer {
+    scroll-margin-top: 100px;
+}
 
 /* Responsive Styles */
 /* Tablet: keep inline menu (no dropdown), tighten spacing */
 @media (max-width: 1024px) {
+    /* Footer tweaks for tablets */
+    .last-section {
+        padding: 64px 40px 0;
+    }
+    .contract {
+        justify-content: space-between;
+        gap: 24px;
+    }
+    .logo-list-item {
+        width: 100%;
+        gap: 24px;
+        justify-content: space-between;
+    }
+    .contract > div:last-child { align-items: center; }
     .nab-bar {
         padding: 16px 40px;
     }
@@ -193,7 +211,7 @@ main section {
         gap: 24px;
     }
     .banner-title {
-        font-size: 56px;
+        font-size: clamp(32px, 5vw, 56px);
         line-height: 1.1;
     }
     nav ul {
@@ -234,10 +252,10 @@ main section {
         margin-top: 24px;
     }
     .banner-title {
-        font-size: 36px;
+        font-size: clamp(28px, 6vw, 36px);
     }
     .btn, .btn-white {
-        font-size: 16px;
+        font-size: clamp(13px, 3vw, 16px);
         padding: 12px 18px;
         margin-top: 8px;
     }
@@ -249,7 +267,7 @@ main section {
         padding: 0 16px;
     }
     .gory {
-        font-size: 32px;
+        font-size: clamp(24px, 5vw, 32px);
         line-height: 1.2;
         margin-bottom: 32px;
     }
@@ -299,7 +317,7 @@ main {
 }
 
 .cate {
-    font-size: 18px;
+    font-size: clamp(14px, 2.2vw, 18px);
     font-weight: 600;
     line-height: 27px;
     margin-bottom: 10PX;
@@ -307,7 +325,7 @@ main {
 }
 
 .gory {
-    font-size: 50px;
+    font-size: clamp(28px, 4.2vw, 50px);
     font-weight: 700;
     line-height: 65px;
     text-transform: capitalize;
@@ -351,8 +369,9 @@ main {
 
 .destination {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
 }
 
 .Selling {
@@ -370,29 +389,33 @@ main {
     text-align: left;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: nowrap;
 }
 
 .trip-booking {
-    margin-right: 50px;
-    padding-left: 100px;
+    flex: 1 1 0;
+    min-width: 0;
+    padding-left: 60px;
 }
 
 .easy {
-    font-size: 18px;
+    font-size: clamp(14px, 2.1vw, 18px);
     font-weight: 600;
     line-height: 27px;
     color: #5E6282;
 }
 
 .trip-booking h1 {
-    font-size: 50px;
+    font-size: clamp(30px, 4.5vw, 50px);
     font-weight: 700;
     line-height: 65px;
     text-transform: capitalize;
     color: #14183E;
     margin-bottom: 31px;
-    width: 511px;
+    max-width: 511px;
+    width: 100%;
 }
 
 .trip-headding-all {
@@ -408,21 +431,29 @@ main {
 
 .trip-headding {
     font-family: Poppins;
-    font-size: 16px;
+    font-size: clamp(14px, 1.8vw, 16px);
     font-weight: 700;
     line-height: 124.5%;
 }
 
 .trip-descript {
     font-family: Poppins;
-    font-size: 16px;
+    font-size: clamp(13px, 1.6vw, 16px);
     font-weight: 400;
     line-height: 124.5%;
 }
 
 .trip-image {
-    width: 485px;
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
+}
+
+.trip-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 .testimonials {
@@ -437,7 +468,7 @@ main {
 .testimoni-text p {
     color: #5E6282;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
     font-weight: 600;
     line-height: 27px;
     text-transform: uppercase;
@@ -445,7 +476,7 @@ main {
 
 .testimoni-text h1 {
     font-family: Volkhov;
-    font-size: 50px;
+    font-size: clamp(28px, 4.6vw, 50px);
     font-weight: 700;
     line-height: 65px;
     text-transform: capitalize;
@@ -473,7 +504,12 @@ main {
 .contract {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between; /* spread columns evenly */
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo-text {
@@ -484,7 +520,7 @@ main {
 .logo-text p {
     color: rgb(94, 98, 130);
     font-family: Poppins;
-    font-size: 13px;
+    font-size: clamp(12px, 1.4vw, 14px);
     font-weight: 500;
     line-height: 124.5%;
     margin-top: 20px;
@@ -493,16 +529,29 @@ main {
 .logo-list-item {
     display: flex;
     width: 600px;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 32px;
     flex-wrap: wrap;
 }
 
-.logo-list-item ul {}
+.logo-list-item ul { padding: 0; margin: 0; }
+
+/* Right-most column (social + payment) */
+.contract > div:last-child { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    gap: 16px; 
+}
+.contract > div:last-child img { 
+    max-width: 180px; 
+    height: auto; 
+}
 
 .company-list {
     color: #080809;
     font-family: Poppins;
-    font-size: 21px;
+    font-size: clamp(16px, 2.6vw, 21px);
     font-weight: 700;
     line-height: 124.5%;
     text-align: left;
@@ -518,7 +567,7 @@ main {
     text-decoration: none;
     color: #5E6282;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
     font-weight: 500;
     line-height: 124.5%;
     text-align: left;
@@ -529,7 +578,7 @@ main {
     margin-top: 60px;
     color: rgb(94, 98, 130);
     font-family: Poppins;
-    font-size: 14px;
+    font-size: clamp(12px, 1.5vw, 14px);
     font-weight: 500;
     line-height: 124.5%;
 }
@@ -568,6 +617,28 @@ main {
 
 /* Mobile L (<=768px) */
 @media (max-width: 768px) {
+    /* Footer: stack columns and center content */
+    .contract {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+    .logo-text { width: 100%; max-width: 360px; }
+    .logo-list-item {
+        width: 100%;
+        justify-content: center;
+        gap: 24px;
+    }
+    .logo-list-item ul { min-width: 140px; }
+    .company-list { text-align: center; margin-bottom: 16px; }
+    .logo-list-item ul li a { text-align: center; }
+    .icon-all ul { justify-content: center; }
+    .destination {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
     .nab-bar {
         padding: 12px 16px;
     }
@@ -578,7 +649,7 @@ main {
         gap: 12px;
     }
     nav ul li a {
-        font-size: 18px;
+        font-size: clamp(13px, 3.5vw, 18px);
     }
     .banner {
         flex-direction: column-reverse;
@@ -591,14 +662,14 @@ main {
         margin-top: 24px;
     }
     .banner-greeting {
-        font-size: 16px;
+        font-size: clamp(14px, 3vw, 16px);
     }
     .banner-title {
-        font-size: 36px;
+        font-size: clamp(26px, 7vw, 36px);
         line-height: 1.2;
     }
     .btn, .btn-white {
-        font-size: 16px;
+        font-size: clamp(12px, 3vw, 16px);
         padding: 12px 18px;
         margin-top: 8px;
     }
@@ -610,10 +681,10 @@ main {
         padding: 0 16px;
     }
     .cate {
-        font-size: 16px;
+        font-size: clamp(13px, 3vw, 16px);
     }
     .gory {
-        font-size: 32px;
+        font-size: clamp(22px, 6vw, 32px);
         line-height: 1.2;
         margin-bottom: 32px;
     }
@@ -635,7 +706,7 @@ main {
         margin-right: 0;
     }
     .trip-booking h1 {
-        font-size: 32px;
+        font-size: clamp(24px, 6vw, 32px);
         line-height: 1.3;
         width: auto;
     }
@@ -650,10 +721,10 @@ main {
         gap: 24px;
     }
     .testimoni-text p {
-        font-size: 16px;
+        font-size: clamp(13px, 3.5vw, 16px);
     }
     .testimoni-text h1 {
-        font-size: 32px;
+        font-size: clamp(22px, 6vw, 32px);
         line-height: 1.2;
     }
     .testimonials-image {
@@ -673,12 +744,16 @@ main {
         justify-content: space-between;
     }
     .copy-right {
-        font-size: 13px;
+        font-size: clamp(11px, 3.2vw, 13px);
     }
 }
 
 /* Mobile M (<=576px) */
 @media (max-width: 576px) {
+    /* Footer: tighten spacing further on small mobiles */
+    .logo-list-item { gap: 16px; }
+    .contract > div:last-child img { max-width: 140px; }
+    .icon-all ul li a i { padding: 10px; font-size: 18px; }
     .nab-bar {
         padding: 10px 12px;
     }
@@ -686,44 +761,44 @@ main {
         gap: 8px;
     }
     nav ul li a {
-        font-size: 16px;
+        font-size: clamp(12px, 4vw, 16px);
     }
     .banner {
         padding: 0 12px;
     }
     .banner-title {
-        font-size: 30px;
+        font-size: clamp(22px, 7vw, 30px);
     }
     .banner-content p {
-        font-size: 14px;
+        font-size: clamp(12px, 3.6vw, 14px);
     }
     .btn, .btn-white {
-        font-size: 15px;
+        font-size: clamp(12px, 3.6vw, 15px);
         padding: 10px 16px;
     }
     .gory {
-        font-size: 28px;
+        font-size: clamp(20px, 6.5vw, 28px);
     }
     .cate {
-        font-size: 15px;
+        font-size: clamp(12px, 4vw, 15px);
     }
     .card {
         width: 100%;
     }
     .card h3 {
-        font-size: 18px;
+        font-size: clamp(15px, 4.8vw, 18px);
     }
     .card p {
-        font-size: 14px;
+        font-size: clamp(12px, 4vw, 14px);
     }
     .trip-booking h1 {
-        font-size: 28px;
+        font-size: clamp(22px, 6.5vw, 28px);
     }
     .trip-headding {
-        font-size: 15px;
+        font-size: clamp(12px, 4vw, 15px);
     }
     .trip-descript {
-        font-size: 14px;
+        font-size: clamp(12px, 3.6vw, 14px);
     }
     .last-section {
         padding: 32px 12px 0;
@@ -739,22 +814,89 @@ main {
         gap: 6px;
     }
     nav ul li a {
-        font-size: 14px;
+        font-size: clamp(11px, 4.5vw, 14px);
     }
     .banner-title {
-        font-size: 26px;
+        font-size: clamp(20px, 8vw, 26px);
     }
     .btn, .btn-white {
-        font-size: 14px;
+        font-size: clamp(11px, 4vw, 14px);
         padding: 8px 14px;
     }
     .gory {
-        font-size: 24px;
+        font-size: clamp(18px, 7vw, 24px);
     }
     .cate {
-        font-size: 14px;
+        font-size: clamp(11px, 4vw, 14px);
     }
     .copy-right {
-        font-size: 12px;
+        font-size: clamp(10px, 3.5vw, 12px);
+    }
+}
+
+
+
+/* Desktop (>=769px): ensure booking columns are side by side */
+@media (min-width: 769px) {
+    .booking {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+        flex-wrap: nowrap;
+    }
+    .trip-booking,
+    .trip-image {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .trip-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .trip-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Laptop (>=1024px): tighter layout for two columns */
+@media (min-width: 1024px) {
+    .booking {
+        justify-content: space-between;
+        gap: 24px;
+    }
+    .trip-booking,
+    .trip-image {
+        flex: 1 1 0; /* allow shrink so they fit with gap */
+        max-width: none;
+        min-width: 0;
+    }
+    .trip-booking {
+        padding-left: 16px;
+    }
+    .trip-image {
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+    .trip-image img {
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+    }
+    /* Smaller text sizes on laptop */
+    .trip-booking h1 {
+        font-size: clamp(30px, 3.5vw, 36px);
+        line-height: 1.2;
+    }
+    .easy {
+        font-size: clamp(14px, 1.5vw, 15px);
+    }
+    .trip-headding {
+        font-size: clamp(13px, 1.2vw, 14px);
+    }
+    .trip-descript {
+        font-size: clamp(13px, 1.2vw, 14px);
     }
 }

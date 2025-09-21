@@ -1,211 +1,308 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- style sheet -->
-    <link rel="stylesheet" href="Css/style.css">
-    <!-- Font cdn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jadoo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <!-- Font awsame -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
 </head>
 
 <body>
-    <header class="headder-img" id="home">
-        <nav class="nab-bar">
-            <img src="assets/icons/Logo.png" alt="">
-            <ul class="">
-                <li><a class="dark-2" href="#destinations">Desitnations</a></li>
-                <li><a class="dark-2" href="#footer">Login</a></li>
-                <li><a href="#subscribe"><button class="btn">Sign up</button></a></li>
-                <li><a class="dark-2" href="#home">EN</a></li>
-            </ul>
-        </nav>
-        <div class="banner">
-            <div class="banner-content">
-                <h6 class="banner-greeting">Best Destinations around the world</h6>
-                <h1 class="banner-title">Travel, enjoy and live a new and full life</h1>
-                <p class="dark-3 ">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen
-                    it engrossed listening. Park gate sell they west hard for the.</p>
-                <button class="btn">Find out more</button>
-                <button class="btn-white"><i class="fa-sharp fa-solid fa-play" style="color: #ffffff;"></i>Play
-                    demo</button>
+    <nav class="navbar navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/icons/Logo.png" alt="Jadoo logo" class="brand-logo">
+            </a>
+            <div class="nav-menu d-flex align-items-center" id="primaryNavbar">
+                <ul class="navbar-nav flex-row align-items-center mb-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                </ul>
+                <div class="nav-actions d-flex align-items-center">
+                    <a class="btn btn-warning btn-sm text-white px-3" href="#subscribe">Sign up</a>
+                </div>
             </div>
-            <div class="image-banner-image">
-                <img class="banner-image" src="assets/Image.png" alt="">
+        </div>
+    </nav>
+    <header class="hero-section" id="home">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="hero-badge text-uppercase">Best destinations around the world</span>
+                    <h1 class="hero-title mt-3">Travel, enjoy and live a new and full life</h1>
+                    <p class="text-muted mt-4">Built Wicket longer admire do barton vanity itself do in it. Preferred to
+                        sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                    <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+                        <a class="btn btn-warning btn-lg text-white px-4" href="#destinations">Find out more</a>
+                        <a class="btn btn-light play-button d-inline-flex align-items-center" href="#subscribe">
+                            <span class="icon-circle me-3"><i class="fa-solid fa-play"></i></span>
+                            Play demo
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <img class="img-fluid hero-image" src="assets/Image.png" alt="Traveler enjoying vacation">
+                </div>
             </div>
         </div>
     </header>
+
     <main>
-        <section class="cards" id="services">
-            <p class="cate">CATEGORY</p>
-            <h1 class="gory">We Offer Best Services</h1>
-            <div class="card-post">
-                <div class="card">
-                    <img src="assets/icons/Group 48.png" alt="">
-                    <h3>Calculated Weather </h3>
-                    <p class="dark-3">Built Wicket longer admire do barton vanity itself do in it.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/icons/Group 51.png" alt="">
-                    <h3>Best Flights</h3>
-                    <p class="dark-3">Engrossed listening. Park gate sell they west hard for the.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/icons/Group 50.png" alt="">
-                    <h3>Local Events</h3>
-                    <p class="dark-3">Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
-                </div>
-                <div class="card">
-                    <img src="assets/icons/Group 49.png" alt="">
-                    <h3>Customization</h3>
-                    <p class="dark-3">We deliver outsourced
-                        aviation services for
-                        military customers</p>
-                </div>
-            </div>
-        </section>
-        <section class="Selling-image" id="destinations">
-            <p class="cate">Top Selling</p>
-            <h1 class="gory">Top Destinations</h1>
-            <div class="destination">
-                <div class="Selling">
-                    <img src="assets/Destination.png" alt="">
-                </div>
-                <div class="Selling">
-                    <img src="assets/Destination (1).png" alt="">
-                </div>
-                <div class="Selling">
-                    <img src="assets/Destination (2).png" alt="">
+        <section class="py-5" id="services">
+            <div class="container text-center">
+                <p class="section-eyebrow text-uppercase mb-2">Category</p>
+                <h2 class="section-title mb-5">We Offer Best Services</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="feature-card h-100 p-4 text-start">
+                            <img src="assets/icons/Group 48.png" alt="Calculated Weather" class="mb-3">
+                            <h3 class="h5 fw-semibold mb-2">Calculated Weather</h3>
+                            <p class="text-muted mb-0">Built Wicket longer admire do barton vanity itself do in it.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="feature-card h-100 p-4 text-start">
+                            <img src="assets/icons/Group 51.png" alt="Best Flights" class="mb-3">
+                            <h3 class="h5 fw-semibold mb-2">Best Flights</h3>
+                            <p class="text-muted mb-0">Engrossed listening. Park gate sell they west hard for the.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="feature-card h-100 p-4 text-start">
+                            <img src="assets/icons/Group 50.png" alt="Local Events" class="mb-3">
+                            <h3 class="h5 fw-semibold mb-2">Local Events</h3>
+                            <p class="text-muted mb-0">Barton vanity itself do in it. Preferred to men it engrossed
+                                listening.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="feature-card h-100 p-4 text-start">
+                            <img src="assets/icons/Group 49.png" alt="Customization" class="mb-3">
+                            <h3 class="h5 fw-semibold mb-2">Customization</h3>
+                            <p class="text-muted mb-0">We deliver outsourced aviation services for military
+                                customers.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-        <section class="booking" id="booking">
-            <div class="trip-booking">
-                <p class="easy">Easy and Fast</p>
-                <h1>Book your next trip
-                    in 3 easy steps</h1>
-                <div class="trip-headding-all">
-                    <div class="trip-headding-image">
-                        <img src="assets/icons/Group 7.png" alt="">
+        <section class="py-5 bg-light" id="destinations">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="section-eyebrow text-uppercase mb-2">Top Selling</p>
+                    <h2 class="section-title">Top Destinations</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="destination-card card border-0 shadow-sm h-100">
+                            <img src="assets/Destination.png" class="card-img-top" alt="Rome, Italy">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-semibold mb-1">Rome, Italy</p>
+                                    <p class="fw-semibold text-warning mb-1">$5.42k</p>
+                                </div>
+                                <p class="text-muted mb-0"><i class="fa-regular fa-paper-plane me-2 text-warning"></i>10 day trip</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="trip-headding-text">
-                        <h4 class="trip-headding">Choose Destination</h4>
-                        <p class="trip-descript">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Urna, tortor tempus. </p>
+                    <div class="col-md-4">
+                        <div class="destination-card card border-0 shadow-sm h-100">
+                            <img src="assets/Destination (1).png" class="card-img-top" alt="London, UK">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-semibold mb-1">London, UK</p>
+                                    <p class="fw-semibold text-warning mb-1">$4.2k</p>
+                                </div>
+                                <p class="text-muted mb-0"><i class="fa-regular fa-paper-plane me-2 text-warning"></i>12 day trip</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="destination-card card border-0 shadow-sm h-100">
+                            <img src="assets/Destination (2).png" class="card-img-top" alt="Full Europe">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-semibold mb-1">Full Europe</p>
+                                    <p class="fw-semibold text-warning mb-1">$15k</p>
+                                </div>
+                                <p class="text-muted mb-0"><i class="fa-regular fa-paper-plane me-2 text-warning"></i>28 day trip</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="trip-headding-all">
-                    <div class="trip-headding-image">
-                        <img src="assets/icons/Group 12.png" alt="">
+            </div>
+        </section>
+
+        <section class="py-5" id="booking">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <p class="section-eyebrow text-uppercase mb-2">Easy and fast</p>
+                        <h2 class="section-title mb-4">Book your next trip in 3 easy steps</h2>
+                        <div class="booking-step d-flex align-items-start gap-3 p-3 mb-3">
+                            <span class="step-icon">
+                                <img src="assets/icons/Group 7.png" alt="Choose destination">
+                            </span>
+                            <div>
+                                <h3 class="h6 fw-semibold mb-1">Choose Destination</h3>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                                    tortor tempus.</p>
+                            </div>
+                        </div>
+                        <div class="booking-step d-flex align-items-start gap-3 p-3 mb-3">
+                            <span class="step-icon">
+                                <img src="assets/icons/Group 12.png" alt="Make payment">
+                            </span>
+                            <div>
+                                <h3 class="h6 fw-semibold mb-1">Make Payment</h3>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                                    tortor tempus.</p>
+                            </div>
+                        </div>
+                        <div class="booking-step d-flex align-items-start gap-3 p-3">
+                            <span class="step-icon">
+                                <img src="assets/icons/Group 11.png" alt="Reach airport">
+                            </span>
+                            <div>
+                                <h3 class="h6 fw-semibold mb-1">Reach Airport on Selected Date</h3>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                                    tortor tempus.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="trip-headding-text">
-                        <h4 class="trip-headding">Make Payment</h4>
-                        <p class="trip-descript">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Urna, tortor tempus. </p>
+                    <div class="col-lg-6 text-center">
+                        <img src="assets/Image (1).png" class="img-fluid rounded-4 shadow" alt="Travel booking illustration">
                     </div>
                 </div>
-                <div class="trip-headding-all">
-                    <div class="trip-headding-image">
-                        <img src="assets/icons/Group 11.png" alt="">
+            </div>
+        </section>
+
+        <section class="py-5" id="testimonials">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <p class="section-eyebrow text-uppercase mb-2">Testimonials</p>
+                        <h2 class="section-title mb-4">What people say about Us.</h2>
+                        <p class="text-muted">Our clients love the bespoke experiences we craft. Every itinerary is
+                            designed to deliver unforgettable adventures with seamless planning.</p>
                     </div>
-                    <div class="trip-headding-text">
-                        <h4 class="trip-headding">Reach Airport on Selected Date</h4>
-                        <p class="trip-descript">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Urna, tortor tempus. </p>
+                    <div class="col-lg-7">
+                        <div class="testimonial-quote">
+                            <img src="assets/Group 64.png" class="img-fluid" alt="Customer testimonials">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="trip-image">
-                <img src="assets/Image (1).png" alt="">
-            </div>
-        </section>
-        <section class="testimonials" id="testimonials">
-            <div class="testimoni-text">
-                <p>Testimonials</p>
-                <h1>What people say
-                    about Us.</h1>
-            </div>
-            <div class="testimonials-image">
-                <img src="assets/Group 64.png" alt="">
-            </div>
-
         </section>
 
-        <section class="slide-logo" id="partners">
-            <img src="assets/icons/image 27.png" alt="">
-            <img src="assets/icons/image 28.png" alt="">
-            <img src="assets/icons/image 29.png" alt="">
-            <img src="assets/icons/image 30.png" alt="">
-            <img src="assets/icons/image 31.png" alt="">
-        </section>
-        <section class="subscribe" id="subscribe">
-            <div>
-                <img src="assets/icons/subscribe section.png" alt="">
+        <section class="py-5 bg-white" id="partners">
+            <div class="container">
+                <div class="partners-strip d-flex flex-wrap justify-content-center align-items-center gap-4">
+                    <img src="assets/icons/image 27.png" alt="Partner 1">
+                    <img src="assets/icons/image 28.png" alt="Partner 2">
+                    <img src="assets/icons/image 29.png" alt="Partner 3">
+                    <img src="assets/icons/image 30.png" alt="Partner 4">
+                    <img src="assets/icons/image 31.png" alt="Partner 5">
+                </div>
             </div>
         </section>
 
-
-
-
+        <section class="py-5" id="subscribe">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="subscribe-card text-center p-5 position-relative overflow-hidden">
+                            <img src="assets/icons/subscribe section.png" class="decor" alt="Subscribe decoration">
+                            <h2 class="section-title mb-3">Subscribe to get special offers</h2>
+                            <p class="text-muted mb-4">Stay ahead of the curve with exclusive travel deals, inspiration,
+                                and insider tips delivered straight to your inbox.</p>
+                            <form class="row g-2 justify-content-center" id="subscribeForm" novalidate>
+                                <div class="col-sm-8">
+                                    <label class="visually-hidden" for="subscriberEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-lg" id="subscriberEmail"
+                                        placeholder="Enter your email" required>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <button type="submit" class="btn btn-warning btn-lg text-white px-4">Subscribe</button>
+                                </div>
+                            </form>
+                            <div class="alert alert-success mt-3 d-none" id="subscribeSuccess" role="alert">
+                                Thanks for subscribing! We'll be in touch soon.
+                            </div>
+                            <div class="alert alert-danger mt-3 d-none" id="subscribeError" role="alert">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="last-section" id="footer">
-        <div class="contract">
-            <div class="logo-text">
-                <img src="assets/icons/Jadoo.png" alt="">
-                <p>Book your trip in minute, get full
-                    Control for much longer.
-                    </p>
+
+    <footer class="pt-5" id="footer">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-4">
+                    <img src="assets/icons/Jadoo.png" alt="Jadoo brand" class="footer-logo">
+                    <p class="mt-3 text-muted">Book your trip in minute, get full control for much longer.</p>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4 class="h6 mb-3">Company</h4>
+                    <ul>
+                        <li><a href="#services">About</a></li>
+                        <li><a href="#partners">Careers</a></li>
+                        <li><a href="#subscribe">Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4 class="h6 mb-3">Support</h4>
+                    <ul>
+                        <li><a href="#subscribe">Help/FAQ</a></li>
+                        <li><a href="#testimonials">Press</a></li>
+                        <li><a href="#partners">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4 class="h6 mb-3">More</h4>
+                    <ul>
+                        <li><a href="#destinations">Airline fees</a></li>
+                        <li><a href="#destinations">Airline</a></li>
+                        <li><a href="#destinations">Low fare tips</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="social-links d-flex gap-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <img src="assets/icons/Discover.png" alt="Payment methods" class="img-fluid mt-4">
+                </div>
             </div>
-            <div class="logo-list-item">
-                <div class="logo-list-items">
-                    <ul>
-                        <h4 class="company-list">Company</h4>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Mobile</a></li>
-                    </ul>
-                </div>
-                <div class="logo-list-items">
-                    <ul>
-                        <h4 class="company-list">Company</h4>
-                        <li><a href="">Help/FAQ</a></li>
-                        <li><a href="">Press</a></li>
-                        <li><a href="">Affilates</a></li>
-                    </ul>
-                </div>
-                <div class="logo-list-items">
-                    <ul>
-                        <h4 class="company-list">Company</h4>
-                        <li><a href="">Airlinefees</a></li>
-                        <li><a href="">Airline</a></li>
-                        <li><a href="">Low fare tips</a></li>
-                    </ul>
-                </div>
+            <div class="text-center py-4">
+                <p class="copy-right mb-0">&copy; 2029. All Rights Reserved.</p>
             </div>
-            <div>
-                <div class="icon-all">
-                    <ul>
-                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-                <img src="assets/icons/Discover.png" alt="">
-            </div>
-            
         </div>
-        <p class="copy-right"><small>&copy; 2029. All Rights Reserved </small></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
